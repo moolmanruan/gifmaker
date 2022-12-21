@@ -7,10 +7,13 @@ import (
 	"github.com/moolmanruan/gifmaker/gif"
 )
 
-const version = "v0.1.0"
+const version = "v0.1.1"
 
 func main() {
-	fmt.Printf("gifmaker %s\n", version)
+	if len(os.Args) < 3 {
+		fmt.Printf("gifmaker (%s)\n\nUsage: gifmaker <input> <output>\n", version)
+		return
+	}
 
 	input, err := os.ReadFile(os.Args[1])
 	if err != nil {
