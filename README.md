@@ -1,4 +1,4 @@
-# gitmaker
+# gifmaker
 A tool to creating gifs using a text file. This allows one to create a text file 
 defining the gif instead of having to figure out how to create a gif in a
 specific language.
